@@ -52,7 +52,8 @@ plugins/<name>/
 ├── .claude-plugin/
 │   └── plugin.json      # Plugin manifest: id, name, description, file references
 ├── skills/
-│   └── <skill>.md       # Skill definition with frontmatter and instructions
+│   └── <skill>/
+│       └── SKILL.md     # Skill definition with frontmatter and instructions
 └── commands/
     └── <command>.md     # Command definition with arguments and steps
 ```

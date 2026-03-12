@@ -1,13 +1,4 @@
 {
   "name": "common",
-  "version": "1.0.0",
-  "description": "Shared skills and commands for all teams — Jira workflows, Git helpers, PR review, and ticket management",
-  "skills": [
-    "skills/jira.md",
-    "skills/git.md"
-  ],
-  "commands": [
-    "commands/pr-review.md",
-    "commands/jira-ticket.md"
-  ]
+  "description": "Shared skills and commands for all teams — Jira workflows, Git helpers, PR review, and ticket management"
 }

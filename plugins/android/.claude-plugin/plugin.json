@@ -1,8 +1,4 @@
 {
   "name": "android",
-  "version": "1.0.0",
-  "description": "Android development skills — Jetpack Compose, architecture patterns, and Android best practices",
-  "skills": [
-    "skills/android.md"
-  ]
+  "description": "Android development skills — Jetpack Compose, architecture patterns, and Android best practices"
 }

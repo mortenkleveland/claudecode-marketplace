@@ -1,8 +1,4 @@
 {
   "name": "backend",
-  "version": "1.0.0",
-  "description": "Backend development skills — API design, database patterns, and server-side best practices",
-  "skills": [
-    "skills/backend.md"
-  ]
+  "description": "Backend development skills — API design, database patterns, and server-side best practices"
 }
