@@ -15,33 +15,33 @@ An internal plugin registry for sharing Claude Code skills and commands across t
 
 ## Setup
 
-### 1. Clone the marketplace
+### 1. Add the marketplace
 
-```bash
-git clone <repo-url> ~/claudecode-marketplace
+In Claude Code, add this repo as a marketplace source:
+
+```
+/plugin marketplace add mortenkleveland/claudecode-marketplace
 ```
 
-### 2. Install plugins in your repo
+### 2. Install plugins
 
-Add plugin paths to your **repo's** `.claude/settings.json` so the whole team gets them:
+Browse available plugins with `/plugin`, or install directly:
 
-```json
-{
-  "plugins": [
-    "/absolute/path/to/claudecode-marketplace/plugins/common",
-    "/absolute/path/to/claudecode-marketplace/plugins/web"
-  ]
-}
+```
+/plugin install common@claudecode-marketplace
+/plugin install web@claudecode-marketplace
 ```
 
-Commit `.claude/settings.json` to your repo so all team members share the same plugin set.
+Choose the installation scope when prompted:
+- **Project** — shared with collaborators via `.claude/settings.json` (recommended for teams)
+- **User** — available across all your projects
+- **Local** — only for you in this repo
 
 ### 3. Verify
 
-Open Claude Code in your project and check that skills and commands are available:
+Skills should appear in the system context automatically. Commands can be invoked with `/<plugin>:<command>` (e.g., `/common:pr-review 123`).
 
-- Skills should appear in the system context automatically
-- Commands can be invoked with `/<command-name>` (e.g., `/pr-review 123`)
+Run `/reload-plugins` to pick up changes without restarting.
 
 ## Plugin Structure
 
@@ -62,7 +62,7 @@ plugins/<name>/
 1. Create a directory under `plugins/` with the structure above
 2. Write a `plugin.json` manifest in `.claude-plugin/`
 3. Add skills and/or commands
-4. Register the plugin in `marketplace.json`
+4. Register the plugin in `.claude-plugin/marketplace.json`
 5. Open a PR for review
 
 ## License

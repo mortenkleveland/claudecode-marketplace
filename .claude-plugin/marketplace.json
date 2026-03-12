@@ -1,0 +1,46 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claudecode-marketplace",
+  "description": "Internal plugin registry for sharing Claude Code skills and commands across teams",
+  "owner": {
+    "name": "Morten Kleveland"
+  },
+  "plugins": [
+    {
+      "name": "common",
+      "description": "Shared skills and commands for all teams — Jira, Git, PR review",
+      "source": "./plugins/common",
+      "category": "productivity"
+    },
+    {
+      "name": "ios",
+      "description": "SwiftUI development skills and patterns",
+      "source": "./plugins/ios",
+      "category": "development"
+    },
+    {
+      "name": "android",
+      "description": "Android development skills and patterns",
+      "source": "./plugins/android",
+      "category": "development"
+    },
+    {
+      "name": "backend",
+      "description": "Backend development skills and patterns",
+      "source": "./plugins/backend",
+      "category": "development"
+    },
+    {
+      "name": "web",
+      "description": "Web frontend development skills and patterns",
+      "source": "./plugins/web",
+      "category": "development"
+    },
+    {
+      "name": "data-analysis",
+      "description": "Data analysis and engineering skills",
+      "source": "./plugins/data-analysis",
+      "category": "development"
+    }
+  ]
+}

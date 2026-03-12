@@ -1,6 +1,5 @@
 {
-  "id": "web",
-  "name": "Web Development",
+  "name": "web",
   "version": "1.0.0",
   "description": "Web frontend development skills — React, TypeScript, CSS, and modern web best practices",
   "skills": [

@@ -1,6 +1,5 @@
 {
-  "id": "common",
-  "name": "Common Tools",
+  "name": "common",
   "version": "1.0.0",
   "description": "Shared skills and commands for all teams — Jira workflows, Git helpers, PR review, and ticket management",
   "skills": [
