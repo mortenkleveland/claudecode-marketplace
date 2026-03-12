@@ -1,0 +1,9 @@
+{
+  "id": "ios",
+  "name": "iOS Development",
+  "version": "1.0.0",
+  "description": "SwiftUI development skills — UI patterns, architecture, and Apple platform best practices",
+  "skills": [
+    "skills/swiftui.md"
+  ]
+}
